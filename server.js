@@ -5,3 +5,17 @@ const bodyParser = require("body-parser")
 const app = express();
 
 //parse requests of content-type: application/json
+app.use(bodyParser.json());
+
+// parse requests of content-type: application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded());
+
+//sample route
+app.get('/', (req, res) => {
+    res.json({ message: "Welcome to The Customer API"});
+});
+
+
+//set PORT
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on Port${port}....`))
