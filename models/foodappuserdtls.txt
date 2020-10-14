@@ -1,4 +1,0 @@
-sign in at: https://774268808837.signin.aws.amazon.com/console
-
-access key id: AKIA3IRQEN2CTR7Q5MJD
-secret access key: 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
