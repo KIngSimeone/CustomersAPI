@@ -7,7 +7,7 @@ model.exports = app => {
     //Get all Customers
     app.get('/customers', customers.findAll);
 
-    //Get a single customer with customerId
+    //Get a single customer
     app.get('/customers/:customerId', customers.findOne);
 
     //Update a customer
