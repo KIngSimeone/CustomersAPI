@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
     res.json({ message: "Welcome to The Customer API"});
 });
 
+
+//set routes path
+require("./app/routes/customer.routes.js")(app);
+
 //set PORT
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on Port${port}....`))
